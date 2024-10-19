@@ -9,11 +9,11 @@
 <body>
     <h1>INICIO DE SESION</h1>
     
-    {% with messages = get_flashed_messages() %}
-      {% if messages %}
+    {% with items = get_flashed_messages() %}
+      {% if items %}
         <ul>
-          {% for message in messages %}
-            <li>{{ message }}</li>
+          {% for item in items %}
+            <li>{{ item }}</li>
           {% endfor %}
         </ul>
       {% endif %}
